@@ -5,12 +5,11 @@ const WeatherForecast = (props) => {
     return ( 
 <div className="weather">
   <h2>{weather.day}</h2>
-  <img src="{weather.img}" alt="{weather.igAlt" />
-  <p><span>conditions:{weather.conditions} </span>current weather conditions</p>
-  <p><span>time:{weather.time} </span>time of day</p>
+  <img src={weather.img} alt={weather.igAlt} />
+  <p><span>Conditions: </span>{weather.conditions}</p>
+  <p><span>Time: </span> {weather.time}</p>
 </div>
     );
 };
-
 
 export default WeatherForecast;
